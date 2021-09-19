@@ -6,7 +6,6 @@
 .header{
    min-height: 100vh;
    width: 100vw;
-   background-color: #F8F8F8;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -39,16 +38,35 @@ nav img{
    text-decoration: none;
    font-size: 16 px;
 }
+
+nav .fas{
+  display: none;
+}
+
+.gbtn{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  }
+
+/* SEARCH BAR*/
+.nav-search{
+  width: 200px;
+   border-radius: 15px;
+   border: 1px #000 solid;
+   padding: 5px 5px 5px 25px;
+   top: 0;
+   left: 0;
+   z-index: 5;
+}
 @media(max-width: 1366px){
   .header{
-    background-image: url(images/bg2.png);
-  }
-  .nav-search {
-    width: 140px;
+     background-image: url(images/bg2.png);
+     overflow: hidden;
   }
     .nav-links ul li{
-      padding: 8px;
-     display: inline-block;
+     display: block;
     }
   .nav-links{
        position: absolute;
@@ -62,10 +80,11 @@ nav img{
        transition: 1s;
     }
   nav .fas{
-    margin-top: 10%;
-    margin-right: 15%;
       display: block;
       color: #fff;
+      margin-top: 10%;
+      margin-right: 8%;
+      padding-right: 16px;
       font-size: 15px;
       cursor: pointer; 
     }

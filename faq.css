@@ -41,6 +41,14 @@ nav img{
 nav .fas{
    display: none;
 }
+
+.gbtn{
+   background-color: transparent;
+   border: none;
+   color: #fff;
+   cursor: pointer;
+   }
+   
 @media(max-width: 1366px){
  .header{
   background-color: #53c68c ;

@@ -21,11 +21,39 @@
           <i class="fas fa-times" onclick="hideMenu()"></i>
           <ul>
             <input type="text" class="nav-search" placeholder="Search..">
-             <li><a href="#"><i class="lni lni-offer"></i>Offers</a></li>
-             <li><a href="#"><i class="fa fa-fw fa-user"></i>Login/ Sign-up</a></li>
+             <li><a href="index.html"><i class="uil uil-estate"></i> Home</a></li>
+             <li><a href="offers.html"><i class="lni lni-offer"></i>Offers</a></li>
+             <li><button class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i>Login/ Sign-up</button></li>
              <li><a href="#"><i class="uil uil-shopping-cart"></i>Cart</a></li>
           </ul>
        </div>
+       <script type="text/javascript">
+         function sign() {
+            console.log("sign");
+         }
+      </script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+
+      <script>
+         // Your web app's Firebase configuration
+         var firebaseConfig = {
+            apiKey: "AIzaSyCmuvv_ew03FKSvxtVLIc_9OWcH6GjbO1w",
+            authDomain: "tcetdev.firebaseapp.com",
+            projectId: "tcetdev",
+            storageBucket: "tcetdev.appspot.com",
+            messagingSenderId: "323333761920",
+            appId: "1:323333761920:web:0c1ef126c2f6b301c0ef65",
+            measurementId: "G-0KHX2EJ3BR"
+            };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+      </script>
+      <script src="./scripts/auth.js"></script>
+      <script src="./scripts/firestore-db.js"></script>
        <i class="fas fa-bars" onclick="showMenu()"></i>
     </nav>
 
@@ -99,7 +127,7 @@
            <div class="foot-help">
             <h3>Need Help?</h3><br><br>
             <ul>
-               <li><a href="">FAQs</a></li><br>
+               <li><a href="FAQs.html">FAQs</a></li><br>
               <li><a href="">Contact us</a></li><br>
             </ul>
         </div>

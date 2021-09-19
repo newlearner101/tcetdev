@@ -41,35 +41,45 @@ nav img{
 nav .fas{
    display: none;
 }
-@media(max-width: 1366px){
- .header{
-   background-image: url(images/Turquoise\ and\ Green\ Soft\ Watercolor\ No\ Copy\ Phone\ Wallpaper.png);
- }
-   .nav-links ul li{
-    display: block;
-   }
- .nav-links{
-      position: absolute;
-      background: #53c68c;
-      height: 100vh;
-      width: 200px;
-      top: 0;
-      right: -250px;
-      text-align: left;
-      z-index: 2;
-      transition: 1s;
-   }
- nav .fas{
-     display: block;
-     color: #ff1616;
-     margin: 10px;
-     font-size: 15px;
-     cursor: pointer; 
-   }
-   .nav-links ul{
-      padding: 30px;
-   }
+
+.gbtn{
+background-color: transparent;
+border: none;
+color: #fff;
+cursor: pointer;
 }
+
+ @media(max-width: 1366px){
+   .header{
+      background-image: url(images/Turquoise\ and\ Green\ Soft\ Watercolor\ No\ Copy\ Phone\ Wallpaper.png);
+      overflow: hidden;
+   }
+     .nav-links ul li{
+      display: block;
+     }
+   .nav-links{
+        position: absolute;
+        background: #53c68c;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+     }
+   nav .fas{
+       display: block;
+       color: #fff;
+       margin-top: 10%;
+       margin-right: 6%;
+       font-size: 15px;
+       cursor: pointer; 
+     }
+     .nav-links ul{
+        padding: 30px;
+     }
+  }
 @media screen and (max-width: 500px) {
  .navbar a {
 float: none;
@@ -477,6 +487,7 @@ list-style: none;
 display:list-item;
 }
 .foot-company ul li a{
+   color: #3e4444;
 text-decoration: none;
 }
 .foot-help{
@@ -487,6 +498,7 @@ list-style: none;
 display:list-item;
 }
 .foot-help ul li a{
+   color: #3e4444;
 text-decoration: none;
 }
 .foot-icons{
@@ -521,11 +533,26 @@ width: 100%;
    .foot .foot-content .foot-shop{
       font-size: 16px;
    }
+   .foot .foot-content .foot-shop ul li a{
+      color: #3e4444;
+      text-decoration: none;
+   }
    .foot .foot-content .foot-company{
+      text-decoration: none;
+      color: #3e4444;
       font-size: 16px;
    }
+   .foot .foot-content .foot-company ul li a{
+      color: #3e4444;
+      text-decoration: none;
+   }
    .foot .foot-bottom{
+      text-decoration: none;
       height: 20px;
       font-size: 14px;
+   }
+   .foot .foot-content .foot-help ul li a{
+      color: #3e4444;
+      text-decoration: none;
    }
 }
